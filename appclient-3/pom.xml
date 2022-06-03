@@ -7,6 +7,7 @@
         <module>config-server</module>
         <module>licensing-service</module>
         <module>eureka-discov-server</module>
+        <module>oraganization-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
