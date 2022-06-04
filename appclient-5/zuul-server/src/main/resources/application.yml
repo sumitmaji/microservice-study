@@ -1,7 +1,15 @@
 server:
   port: 8085
 
+#logging:
+#  level:
+#    org:
+#      springframework: DEBUG
+
 spring:
+  cloud:
+    config:
+      enabled: false
   application:
     name: zuul-server
 eureka:
