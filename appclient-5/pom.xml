@@ -8,6 +8,7 @@
         <module>licensing-service</module>
         <module>eureka-discov-server</module>
         <module>oraganization-service</module>
+        <module>zuul-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
