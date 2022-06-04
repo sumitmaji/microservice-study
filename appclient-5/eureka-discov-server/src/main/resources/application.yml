@@ -1,0 +1,14 @@
+server:
+  port: 8083
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF

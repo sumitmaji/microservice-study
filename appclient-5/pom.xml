@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>config-server</module>
+        <module>licensing-service</module>
+        <module>eureka-discov-server</module>
+        <module>oraganization-service</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.sum</groupId>
+    <artifactId>applient-5</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+    <name>Sum :: MicroService Application :: Project</name>
+    <description>Spring boot project</description>
+    <inceptionYear>2022</inceptionYear>
+    <scm>
+        <connection>scm:git:git@github.com:sumitmaji/microservice-study.git</connection>
+        <developerConnection>scm:git:git@github.com:sumitmaji/microservice-study.git</developerConnection>
+        <url>http://github.com/sumitmaji/microservice-study/</url>
+        <tag>${project.version}</tag>
+    </scm>
+
+    <properties>
+        <spring-boot.version>2.7.0</spring-boot.version>
+        <spring-cloud.version>2021.0.3</spring-cloud.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+</project>
