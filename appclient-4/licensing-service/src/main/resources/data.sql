@@ -7,3 +7,9 @@ VALUES ('38777179-7094-4200-9d61-edb101c6ea84', '442adb6e-fa58-47f3-9ca2-ed1fecd
 INSERT INTO licenses (license_id,  organization_id, license_type, product_name, license_max, license_allocated)
 VALUES ('08dbe05-606e-4dad-9d33-90ef10e334f9', '442adb6e-fa58-47f3-9ca2-ed1fecdfe86c', 'core-prod','WildCat Application Gateway', 16,16);
 
+
+INSERT INTO organizations (organization_id, name, contact_name, contact_email, contact_phone)
+VALUES ('e254f8c-c442-4ebe-a82a-e2fc1d1ff78a', 'customer-crm-co', 'Mark Balster', 'mark.balster@custcrmco.com', '823-555-1212');
+
+INSERT INTO organizations (organization_id, name, contact_name, contact_email, contact_phone)
+VALUES ('442adb6e-fa58-47f3-9ca2-ed1fecdfe86c', 'HR-PowerSuite', 'Doug Drewry','doug.drewry@hr.com', '920-555-1212');
